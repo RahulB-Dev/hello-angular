@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,RouterLink],
   template: `<h1>Angular Routing App</h1>
   <nav>
     <a routerLink="/">Home</a> |
-    <a routerLink="/about">About</a>
+    <a routerLink="/about">About</a> |
+    <a routerLink="/welcome">Welcome</a> |
     </nav>
     <hr>
     <router-outlet></router-outlet>`,

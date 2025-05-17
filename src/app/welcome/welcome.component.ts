@@ -15,8 +15,15 @@ export class WelcomeComponent {
   constructor(private http: HttpClient) {}
 
   submitForm() {
-    console.log ('Name:', this.name);
-    console.log ('Email:', this.email)
-    alert(`Thank you ${this.name}, we will contact you at ${this.email}`);
+    const formData = {
+      name: this.name,
+      email: this.email
+    };
+
+    this.http.post('https://example.com/api/submit', formData)
+      .subscribe(response => {
+        console.log('Form submitted successfully', response);
+        alert(`Thank you ${this.name}, your form has been submitted!`);
+      })
   }
 }
