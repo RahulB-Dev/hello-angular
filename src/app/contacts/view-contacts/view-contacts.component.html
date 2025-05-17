@@ -1,0 +1,11 @@
+<h2> Contacts List</h2>
+
+<p *ngIf="errorMessage" style="color: red">
+  {{ errorMessage }} </p>
+
+    <ul *ngIf="contacts.length > 0">
+        <li *ngFor="let contact of contacts">
+            <h3>{{ contact.name }}</h3>
+            <p>{{ contact.email }}</p>
+        </li>
+    </ul>

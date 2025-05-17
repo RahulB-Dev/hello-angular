@@ -1,0 +1,10 @@
+<h2> Users List </h2>
+
+<p *ngIf="errorMessage" style="color:red;">
+{{errorMessage}}</p>
+
+<ul *ngIf="users.length> 0">
+    <li *ngFor="let user of users">
+        {{user.name}} - {{user.email}}
+    </li>
+</ul>

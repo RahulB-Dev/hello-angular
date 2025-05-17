@@ -9,6 +9,10 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     <a routerLink="/">Home</a> |
     <a routerLink="/about">About</a> |
     <a routerLink="/welcome">Welcome</a> |
+    <a routerLink="/users">Users</a> |
+    <a routerLink="/add-contact">Add Contact</a> |
+    <a routerLink="/view-contacts">View Contacts</a>
+
     </nav>
     <hr>
     <router-outlet></router-outlet>`,

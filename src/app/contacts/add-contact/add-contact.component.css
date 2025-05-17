@@ -1,0 +1,15 @@
+form {
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    padding:3px;
+    margin-top: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
